@@ -1,9 +1,7 @@
 class Cast:
     """A collection of actors.
-
     The responsibility of a cast is to keep track of a collection of actors. It has methods for 
     adding, removing and getting them by a group name.
-
     Attributes:
         _actors (dict): A dictionary of actors { key: group_name, value: a list of actors }
     """
@@ -30,7 +28,6 @@ class Cast:
         
         Args:
             group (string): The name of the group.
-
         Returns:
             List: The actors in the group.
         """
@@ -39,6 +36,7 @@ class Cast:
             results = self._actors[group].copy()
         return results
     
+   
     def get_all_actors(self):
         """Gets all of the actors in the cast.
         
