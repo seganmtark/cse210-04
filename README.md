@@ -1,7 +1,7 @@
 # cse210-04
  
-# Robot Finds Kitten
-Simon Carless once described robotfindskitten as "less a game and more a way of life ... It's fun to wander around until you find a kitten, at which point you feel happy and can start again". I don't think I could have said it better myself!
+# Greed
+Greed is a game in which the player seeks to gather as many falling gems as possible. The game continues as long as the player wants more!
 
 ## Getting Started
 ---
@@ -35,4 +35,8 @@ root                    (project root folder)
 
 ## Authors
 ---
-* # TODO: Add your name and email here
+* Rosana Garcia
+* Jessica Henry
+* Thiago Gouvea Leite
+* Megan Stark
+* Sterling Welker
