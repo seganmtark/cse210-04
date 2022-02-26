@@ -10,22 +10,15 @@ class Artifact(Actor):
     Attributes:
         points (int): A value of the Artifact.
     """
-    def __init__(self):
+   def __init__(self):
+        """Constructs a new Artifact."""
         super().__init__()
-        self._points = 0
-        
-    def get_points(self):
-        """Gets the Artifact's points.
-        
-        Returns:
-            points: The point value of the Artifact.
-        """
-        return self._points
+        self._get_point = 1
     
-    def set_points(self, points):
-        """Assigns the points of the Artifact.
-        
-        Args:
-            points (int): The given points.
-        """
-        self._points = points
+    def set_points(self, get_point):
+        """Set the points for artifacts."""
+        self._get_point = get_point
+
+    def get_earn_point(self):
+        """Gets the points value of Artifact."""
+        return self._get_point
