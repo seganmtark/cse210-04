@@ -10,7 +10,7 @@ class Artifact(Actor):
     Attributes:
         points (int): A value of the Artifact.
     """
-   def __init__(self):
+    def __init__(self):
         """Constructs a new Artifact."""
         super().__init__()
         self._get_point = 1
