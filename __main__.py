@@ -42,13 +42,8 @@ def main():
     
     # create the player
     x = int(MAX_X / 2)
-<<<<<<< HEAD
     y = int(550)
     position = Point(x, y)
-=======
-    # y set to keep player at the bottom of the window
-    position = Point(x, 550)
->>>>>>> ae79d54d2f4e02dc561aae95f79bc36c5024e38a
 
     player = Actor()
     player.set_text("#")
