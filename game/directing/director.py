@@ -39,7 +39,7 @@ class Director:
         """
         player = cast.get_first_actor("player")
         velocity = self._keyboard_service.get_direction()
-        player.set_velocity(velocity)        
+        player.set_velocity(velocity)    
 
     def _do_updates(self, cast):
         """Updates the player's position and resolves any collisions with artifacts.
@@ -50,8 +50,9 @@ class Director:
         banner = cast.get_first_actor("banners")
         player = cast.get_first_actor("player")
         artifacts = cast.get_actors("artifacts")
+        velocity = self._keyboard_service.get_direction()
 
-        banner.set_text("")
+        banner.set_text("Score: ")
         max_x = self._video_service.get_width()
         max_y = self._video_service.get_height()
         player.move_next(max_x, max_y)

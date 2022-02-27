@@ -37,3 +37,16 @@ class KeyboardService:
         direction = direction.scale(self._cell_size)
         
         return direction
+
+    def get_artifact_direction(self):
+        """Moves the artifacts vertically.
+
+        Returns:
+            Point: The selected direction.
+        """
+        dy = 0
+
+        direction = Point(0, dy)
+        direction = direction.scale(self._cell_size)
+
+        return direction

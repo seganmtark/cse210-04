@@ -31,7 +31,7 @@ def main():
     
     # create the cast
     cast = Cast()
-    
+
     # create the banner
     banner = Actor()
     banner.set_text("")
@@ -42,7 +42,7 @@ def main():
     
     # create the player
     x = int(MAX_X / 2)
-    y = int(MAX_Y / 2)
+    y = int(550)
     position = Point(x, y)
 
     player = Actor()
@@ -74,6 +74,8 @@ def main():
         
         x = random.randint(1, COLS - 1)
         y = random.randint(1, ROWS - 1)
+        dy = 0
+        dx = 0
         position = Point(x, y)
         position = position.scale(CELL_SIZE)
 
