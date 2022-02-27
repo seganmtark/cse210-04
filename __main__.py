@@ -42,8 +42,13 @@ def main():
     
     # create the player
     x = int(MAX_X / 2)
+<<<<<<< HEAD
     y = int(550)
     position = Point(x, y)
+=======
+    # y set to keep player at the bottom of the window
+    position = Point(x, 550)
+>>>>>>> ae79d54d2f4e02dc561aae95f79bc36c5024e38a
 
     player = Actor()
     player.set_text("#")
@@ -67,7 +72,8 @@ def main():
         gem = Artifact()
         gem.set_text("*")
         gem.set_font_size(FONT_SIZE)
-        gem.set_position(Point(random.randint(15, 885),15))
+        gem.set_color(color)
+        gem.set_position(Point(random.randint(15, 885), 15))
         cast.add_actor("gem", gem)
 
     for n in range(DEFAULT_ROCKS):
@@ -91,7 +97,6 @@ def main():
         rock.set_position(Point(random.randint(15, 885),15))
         cast.add_actor("rock", rock)
 
-    
     # start the game
     keyboard_service = KeyboardService(CELL_SIZE)
     video_service = VideoService(CAPTION, MAX_X, MAX_Y, CELL_SIZE, FRAME_RATE)
