@@ -1,7 +1,7 @@
 class Point:
     """A distance from a relative origin (0, 0).
 
-    The responsibility of Point is to hold and provide information about itself. Point has a few 
+    The responsibility of Point is to hold and provide information about itself in relation to space. Point has a few 
     convenience methods for adding, scaling, and comparing them.
 
     Attributes:
@@ -10,7 +10,7 @@ class Point:
     """
     
     def __init__(self, x, y):
-        """Constructs a new Point using the specified x and y values.
+        """Constructs a new Point in space using the specified x and y values.
         
         Args:
             x (int): The specified x value.
@@ -20,23 +20,23 @@ class Point:
         self._y = y
 
     def add(self, other):
-        """Gets a new point that is the sum of this and the given one.
+        """Gets a new point in space that is the sum of this and the given one.
 
         Args:
-            other (Point): The Point to add.
+            other (Point): The Point in space to add.
 
         Returns:
-            Point: A new Point that is the sum.
+            Point: A new Point in space that is the sum.
         """
         x = self._x + other.get_x()
         y = self._y + other.get_y()
         return Point(x, y)
 
     def equals(self, other):
-        """Whether or not this Point is equal to the given one.
+        """Whether or not this Point in space is equal to the given one.
 
         Args:
-            other (Point): The Point to compare.
+            other (Point): The Point in space to compare.
 
         Returns: 
             boolean: True if both x and y are equal; false if otherwise.
@@ -67,6 +67,6 @@ class Point:
             factor (int): The amount to scale.
             
         Returns:
-            Point: A new Point that is scaled.
+            Point: A new Point in space that is scaled.
         """
         return Point(self._x * factor, self._y * factor)

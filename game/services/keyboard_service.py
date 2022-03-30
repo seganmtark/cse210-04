@@ -24,6 +24,7 @@ class KeyboardService:
             Point: The selected direction.
         """
         dx = 0
+        dy = 0
 
         if pyray.is_key_down(pyray.KEY_LEFT):
             dx = -1
@@ -32,8 +33,7 @@ class KeyboardService:
             dx = 1
         
 
-
-        direction = Point(dx, 0)
+        direction = Point(dx, dy)
         direction = direction.scale(self._cell_size)
         
         return direction
@@ -44,9 +44,10 @@ class KeyboardService:
         Returns:
             Point: The selected direction.
         """
-        dy = 0
+        dx = 0
+        dy = 1
 
-        direction = Point(0, dy)
+        direction = Point(dx, dy)
         direction = direction.scale(self._cell_size)
-
+        
         return direction

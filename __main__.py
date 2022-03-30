@@ -1,4 +1,4 @@
-import os
+
 import random
 
 from game.casting.actor import Actor
@@ -68,15 +68,14 @@ def main():
         gem.set_text("*")
         gem.set_font_size(FONT_SIZE)
         gem.set_color(color)
-        gem.set_position(Point(random.randint(15, 885), 15))
-        cast.add_actor("gem", gem)
+        gem.set_position(position)
+        cast.add_actor("artifacts", gem)
 
     for n in range(DEFAULT_ROCKS):
         
         x = random.randint(1, COLS - 1)
         y = random.randint(1, ROWS - 1)
-        dy = 0
-        dx = 0
+
         position = Point(x, y)
         position = position.scale(CELL_SIZE)
 
@@ -89,8 +88,8 @@ def main():
         rock.set_text("O")
         rock.set_font_size(FONT_SIZE)
         rock.set_color(color)
-        rock.set_position(Point(random.randint(15, 885),15))
-        cast.add_actor("rock", rock)
+        rock.set_position(position)
+        cast.add_actor("artifacts", rock)
 
     # start the game
     keyboard_service = KeyboardService(CELL_SIZE)
